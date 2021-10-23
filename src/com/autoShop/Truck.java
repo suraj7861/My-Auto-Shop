@@ -1,6 +1,7 @@
 package com.autoShop;
 
 public class Truck extends Car {
+	
 	//variable
 	int weight;
 
@@ -8,14 +9,15 @@ public class Truck extends Car {
 		super(speed, regularPrice, color);
 		this.weight = weight;
 	}
-
+	
+	//method: get sale price of Truck
 	@Override
 	public double getSalePrice() {
 		if (weight > 2000) {
 			salePrice = regularPrice * 0.90;
 		}
 		else {
-			salePrice = regularPrice * 0.90;
+			salePrice = regularPrice * 0.80;
 		}
 		return salePrice;
 		
@@ -23,7 +25,7 @@ public class Truck extends Car {
 
 	@Override
 	public String toString() {
-		return "Truck [weight= " + weight + " salePrice = "+getSalePrice();
+		return "Truck = speed = "+speed +", regularPrice = "+regularPrice+", color ="+color+ ", weight = " + weight + ", salePrice = "+getSalePrice();
 	}
 	
 		

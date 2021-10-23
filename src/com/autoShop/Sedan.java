@@ -11,6 +11,7 @@ public class Sedan extends Car {
 		this.length = length;
 	}
 	
+	//method: get sale price of Sedan
 	@Override
 	public double getSalePrice() {
 		if (length >  20) {
@@ -25,7 +26,7 @@ public class Sedan extends Car {
 
 	@Override
 	public String toString() {
-		return "Sedan [length=" + length + " ,salePrice = "+getSalePrice();
+		return "Sedan= speed = "+speed +", regularPrice = "+regularPrice+", color ="+color+"length=" + length + " ,salePrice = "+getSalePrice();
 	}
 	
 	

@@ -1,6 +1,7 @@
 package com.autoShop;
 
 public class Car {
+	
 	//variable declaration
 	int speed;
 	double regularPrice;

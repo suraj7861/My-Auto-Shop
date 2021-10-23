@@ -13,6 +13,7 @@ public class Ford extends Car {
 		this.manufacturerDiscount = manufacturerDiscount;
 	}
 	
+	//method: get sale price of Ford
 	@Override
 	public double getSalePrice() {
 		salePrice = regularPrice - manufacturerDiscount;
@@ -21,7 +22,7 @@ public class Ford extends Car {
 
 	@Override
 	public String toString() {
-		return "Ford [year=" + year + ", manufacturerDiscount=" + manufacturerDiscount + " ,salePrice = "+getSalePrice();
+		return "speed = "+speed +", regularPrice = "+regularPrice+", color ="+color+ ", year=" + year + ", manufacturerDiscount=" + manufacturerDiscount + " ,salePrice = "+getSalePrice();
 	}
 	
 	
